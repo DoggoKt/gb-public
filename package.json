@@ -1,0 +1,24 @@
+{
+  "name": "GloriousBot-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "13.8.0",
+    "npm": "6.13.6"
+  },
+  "keywords": [],
+  "author": "d0gg3r",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "git+https://github.com/Mr-Doge/discord.js.git",
+    "mongoose": "^5.8.2",
+    "utf-8-validate": "^5.0.2"
+  }
+}
