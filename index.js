@@ -1,7 +1,6 @@
 async function main() {
 // Connect to MongoDB (Hosted on mlab.com)
-    const mongoose = require('mongoose');
-    const db = require('./lib/db.js');
+require('./lib/db.js');
 
     const modmail = require('./lib/modmail.js');
 
@@ -22,7 +21,7 @@ async function main() {
         }
         let jsFile = files.filter(f => f.split(".").pop() === "js");
 
-        jsFile.forEach((f, i) => {
+        jsFile.forEach((f) => {
             let props = require(`./commands/${f}`);
             console.log(`${f.split('.')[0]} command loaded!`);
             bot.commands.set(props.command.name, props);
@@ -49,7 +48,7 @@ async function main() {
         });
     });
 
-    bot.login(token);
-};
+    await bot.login(token);
+}
 
-main();
+main().then();

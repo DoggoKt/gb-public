@@ -1,5 +1,5 @@
 {
-  "name": "GloriousBot-v2",
+  "name": "gb-v2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,6 +19,7 @@
   "dependencies": {
     "discord.js": "git+https://github.com/Mr-Doge/discord.js.git",
     "mongoose": "^5.8.2",
+    "node-fetch": "^2.6.0",
     "utf-8-validate": "^5.0.2"
   }
 }
